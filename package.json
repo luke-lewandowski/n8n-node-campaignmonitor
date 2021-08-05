@@ -1,0 +1,26 @@
+{
+  "name": "n8n-node-campaignmonitor",
+  "version": "1.0.0",
+  "description": "n8n node for working with Campaign Monitor APIs",
+  "main": "./dist/CampaignMonitor.node.js",
+  "scripts": {
+    "build": "n8n-node-dev build --destination ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luke-lewandowski/n8n-node-campaignmonitor.git"
+  },
+  "keywords": [
+    "n8n",
+    "campaign",
+    "monitor",
+    "cm",
+    "emails"
+  ],
+  "author": "Luke Lewandowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luke-lewandowski/n8n-node-campaignmonitor/issues"
+  },
+  "homepage": "https://github.com/luke-lewandowski/n8n-node-campaignmonitor#readme"
+}
