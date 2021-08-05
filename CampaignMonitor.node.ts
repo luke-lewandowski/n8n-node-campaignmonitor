@@ -786,7 +786,7 @@ export class CampaignMonitor implements INodeType {
 					{
 						name: 'Send',
 						value: 'send',
-						description: 'Delete a subscriber on list'
+						description: 'Send transaction email'
 					}
 				],
 				default: 'send',

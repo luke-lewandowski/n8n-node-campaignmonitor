@@ -1,21 +1,18 @@
 {
-	"node": "n8n-nodes-base.campaignmonitor",
-	"nodeVersion": "1.0",
-	"codexVersion": "1.0",
-	"categories": [
-		"Marketing & Content",
-		"Communication"
-	],
-	"resources": {
-		"credentialDocumentation": [
-			{
-				"url": "https://docs.n8n.io/credentials/mailchimp"
-			}
-		],
-		"primaryDocumentation": [
-			{
-				"url": "https://docs.n8n.io/nodes/n8n-nodes-base.mailchimp/"
-			}
-		]
-	}
+  "node": "n8n-nodes-base.campaignmonitor",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Marketing & Content", "Communication"],
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://github.com/luke-lewandowski/n8n-node-campaignmonitor"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://github.com/luke-lewandowski/n8n-node-campaignmonitor"
+      }
+    ]
+  }
 }

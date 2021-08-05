@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  web:
+    image: n8nio/n8n
+    volumes:
+      - ./dist/:/home/node/.n8n/custom/CampaignMonitor
+    ports:
+      - 5678:5678
+    environment:
+      #- MYSQLDB_HOST=mysql
+      #- MYSQLDB_DATABASE=hooks
+      #- MYSQLDB_USER=hooks
+      #- MYSQLDB_PASSWORD=secretpassword
+      #- N8N_BASIC_AUTH_ACTIVE=true
+      #- N8N_BASIC_AUTH_USER=demouser
+      #- N8N_BASIC_AUTH_PASSWORD=secretpassword
+      - N8N_ENCRYPTION_KEY=secretkey
