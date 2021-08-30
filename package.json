@@ -4,7 +4,7 @@
   "description": "n8n node for working with Campaign Monitor APIs",
   "main": "./dist/CampaignMonitor.node.js",
   "scripts": {
-    "clean": "npx rimraf ./dist",
+    "clean": "npx rimraf ./dist/*",
     "build": "npm run clean && npx n8n-node-dev build --destination ./dist/ && cp -rf node_modules dist/ && cp -rf public/* dist/",
     "serve": "npm run build && docker-compose up"
   },
