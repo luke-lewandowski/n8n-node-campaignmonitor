@@ -46,7 +46,7 @@ export async function campaignMonitorApiRequest(
 
   try {
     if (authenticationMethod === "apiKey") {
-      const credentials = this.getCredentials("campaignMonitorApi");
+      const credentials = await this.getCredentials("campaignMonitorApi");
 
       if (credentials === undefined) {
         throw new NodeOperationError(
@@ -55,7 +55,7 @@ export async function campaignMonitorApiRequest(
         );
       }
 
-      const apiKey = `${credentials["apiKey"]}:`;
+      const apiKey = `${credentials.apiKey}:`;
       const B64ApiKey = Buffer.from(apiKey, "utf-8").toString("base64");
 
       options.headers = Object.assign({}, headers, {
