@@ -28,5 +28,8 @@
   "dependencies": {
     "n8n-core": "^0.78.0",
     "n8n-workflow": "^0.64.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.6"
   }
 }

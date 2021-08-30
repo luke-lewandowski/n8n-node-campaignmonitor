@@ -48,8 +48,6 @@ export async function campaignMonitorApiRequest(
     if (authenticationMethod === "apiKey") {
       const credentials = this.getCredentials("campaignMonitorApi");
 
-      console.log(JSON.stringify(credentials));
-
       if (credentials === undefined) {
         throw new NodeOperationError(
           this.getNode(),
