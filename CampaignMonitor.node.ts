@@ -1159,7 +1159,7 @@ export class CampaignMonitor implements INodeType {
 
             responseData = await campaignMonitorApiRequest.call(
               this,
-              `/subscribers/${listId}.json?email=${email}`,
+              `/subscribers/${listId}.json?email=${encodeURI(email)}`,
               "DELETE"
             );
             responseData = { success: true };
@@ -1171,7 +1171,9 @@ export class CampaignMonitor implements INodeType {
 
             responseData = await campaignMonitorApiRequest.call(
               this,
-              `/subscribers/${listId}.json?email=${email}&includetrackingpreference=true`,
+              `/subscribers/${listId}.json?email=${encodeURI(
+                email
+              )}&includetrackingpreference=true`,
               "GET",
               {},
               qs
